@@ -15,12 +15,36 @@
 // Data would normally be read from files
 
 //1-5 here
-GLfloat vertices[] = {-0.5f, 0.0f, -0.5f,
-                    -0.5f, 0.0f, 0.5f,
-                    0.5f, 0.0f, 0.5f,
-                    0.5f, 0.0f, -0.5f,
-                    0.0f, 0.5f, 0.0f
-                    };
+GLfloat vertices[] = {
+    // Base vertices (optional, shown here for completeness)
+    -0.5f, -0.5f, 0.5f,  // Base 1
+     0.5f, -0.5f, 0.5f,  // Base 2
+     0.5f, -0.5f, -0.5f, // Base 3
+    -0.5f, -0.5f, -0.5f, // Base 4
+
+    // Apex vertex
+     0.0f, 0.5f, 0.0f,   // Apex
+
+    // Side 1
+    -0.5f, -0.5f, 0.5f,  // Base 1
+     0.0f, 0.5f, 0.0f,   // Apex
+     0.5f, -0.5f, 0.5f,  // Base 2
+    
+    // Side 2
+     0.5f, -0.5f, 0.5f,  // Base 2
+     0.0f, 0.5f, 0.0f,   // Apex
+     0.5f, -0.5f, -0.5f, // Base 3
+    
+    // Side 3
+     0.5f, -0.5f, -0.5f, // Base 3
+     0.0f, 0.5f, 0.0f,   // Apex
+    -0.5f, -0.5f, -0.5f, // Base 4
+    
+    // Side 4
+    -0.5f, -0.5f, -0.5f, // Base 4
+     0.0f, 0.5f, 0.0f,   // Apex
+    -0.5f, -0.5f, 0.5f,  // Base 1
+};
 
 GLubyte indices[] = {0,1,2 , 0,2,3
 					0,3,4,  0,4,1
@@ -128,7 +152,7 @@ void display(void)
 	// clear the screen
 	glClear(GL_COLOR_BUFFER_BIT);
 	glBindVertexArray(vertexArrayObjID);	// Select VAO
-	glDrawArrays(GL_TRIANGLES, 0, 3);	// draw object
+	glDrawArrays(GL_TRIANGLES, 0, 12)	// draw object
 	
 	printError("display");
     GLfloat t = (GLfloat)glutGet(GLUT_ELAPSED_TIME);
