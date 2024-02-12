@@ -52,10 +52,16 @@ GLubyte indices[] = {0,1,2 , 0,2,3
 					 }
 
 
-GLfloat colors[] = { 
-					
-					0.0f, 0.0f,1.0f
-                    };
+GLfloat colors[] = {
+     1.0f, 0.0f, 0.0f, // red
+     1.0f, 0.0f, 0.0f,
+     1.0f, 0.0f, 0.0f,
+
+     0.0f, 1.0f, 0.0f, // green
+     0.0f, 1.0f, 0.0f,
+     0.0f, 1.0f, 0.0f
+
+};
 					
 GLfloat myMatrix[] = {  1.0f, 0.0f, 0.0f, 0.0f,
                         0.0f, 1.0f, 0.0f, 0.0f,
