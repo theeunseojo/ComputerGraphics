@@ -1,22 +1,22 @@
 # set this variable to the director in which you saved the common files
 commondir = ../common/
 
-all : lab1-1 lab1-2 lab1-3 lab1-4 lab1-5
+all : lab2-1 lab2-2 lab2-3 lab2-4 lab2-5
 
-lab1-1 : lab1-1.cpp $(commondir)GL_utilities.c $(commondir)LoadTGA.c $(commondir)Linux/MicroGlut.c
-	gcc -Wall -o lab1-1 -I$(commondir) -I../common/Linux -DGL_GLEXT_PROTOTYPES lab1-1.cpp $(commondir)GL_utilities.c $(commondir)LoadTGA.c $(commondir)Linux/MicroGlut.c -lXt -lX11 -lGL -lm -lstdc++
+lab2-1 : lab2-1.cpp $(commondir)GL_utilities.c $(commondir)LoadTGA.c $(commondir)Linux/MicroGlut.c
+	gcc -Wall -o lab2-1 -I$(commondir) -I../common/Linux -DGL_GLEXT_PROTOTYPES lab2-1.cpp $(commondir)GL_utilities.c $(commondir)LoadTGA.c $(commondir)Linux/MicroGlut.c -lXt -lX11 -lGL -lm -lstdc++
 
-lab1-2 : lab1-2.cpp $(commondir)GL_utilities.c $(commondir)LoadTGA.c $(commondir)Linux/MicroGlut.c
-	gcc -Wall -o lab1-2 -I$(commondir) -I../common/Linux -DGL_GLEXT_PROTOTYPES lab1-2.cpp $(commondir)GL_utilities.c $(commondir)LoadTGA.c $(commondir)Linux/MicroGlut.c -lXt -lX11 -lGL -lm -lstdc++
+lab2-2 : lab2-2.cpp $(commondir)GL_utilities.c $(commondir)LoadTGA.c $(commondir)Linux/MicroGlut.c
+	gcc -Wall -o lab2-2 -I$(commondir) -I../common/Linux -DGL_GLEXT_PROTOTYPES lab2-2.cpp $(commondir)GL_utilities.c $(commondir)LoadTGA.c $(commondir)Linux/MicroGlut.c -lXt -lX11 -lGL -lm -lstdc++
 
-lab1-3 : lab1-3.cpp $(commondir)GL_utilities.c $(commondir)LoadTGA.c $(commondir)Linux/MicroGlut.c
-	gcc -Wall -o lab1-3 -I$(commondir) -I../common/Linux -DGL_GLEXT_PROTOTYPES lab1-3.cpp $(commondir)GL_utilities.c $(commondir)LoadTGA.c $(commondir)Linux/MicroGlut.c -lXt -lX11 -lGL -lm -lstdc++
+lab2-3 : lab2-3.cpp $(commondir)GL_utilities.c $(commondir)LoadTGA.c $(commondir)Linux/MicroGlut.c 
+	gcc -Wall -o lab2-3 -I$(commondir) -I../common/Linux -DGL_GLEXT_PROTOTYPES lab2-3.cpp $(commondir)GL_utilities.c $(commondir)LoadTGA.c $(commondir)Linux/MicroGlut.c -lXt -lX11 -lGL -lm -lstdc++
 
-lab1-4 : lab1-4.cpp $(commondir)GL_utilities.c $(commondir)LoadTGA.c $(commondir)Linux/MicroGlut.c
-	gcc -Wall -o lab1-4 -I$(commondir) -I../common/Linux -DGL_GLEXT_PROTOTYPES lab1-4.cpp $(commondir)GL_utilities.c $(commondir)LoadTGA.c $(commondir)Linux/MicroGlut.c -lXt -lX11 -lGL -lm -lstdc++
+lab2-4 : lab2-4.cpp $(commondir)GL_utilities.c $(commondir)LoadTGA.c $(commondir)Linux/MicroGlut.c 
+	gcc -Wall -o lab2-4 -I$(commondir) -I../common/Linux -DGL_GLEXT_PROTOTYPES lab2-4.cpp $(commondir)GL_utilities.c $(commondir)LoadTGA.c $(commondir)Linux/MicroGlut.c -lXt -lX11 -lGL -lm -lstdc++
 
-lab1-5 : lab1-5.cpp $(commondir)GL_utilities.c $(commondir)LoadTGA.c $(commondir)Linux/MicroGlut.c
-	gcc -Wall -o lab1-5 -I$(commondir) -I../common/Linux -DGL_GLEXT_PROTOTYPES lab1-5.cpp $(commondir)GL_utilities.c $(commondir)LoadTGA.c $(commondir)Linux/MicroGlut.c -lXt -lX11 -lGL -lm -lstdc++
+lab2-5 : lab2-5.cpp $(commondir)GL_utilities.c $(commondir)LoadTGA.c $(commondir)Linux/MicroGlut.c 
+	gcc -Wall -o lab2-5 -I$(commondir) -I../common/Linux -DGL_GLEXT_PROTOTYPES lab2-5.cpp $(commondir)GL_utilities.c $(commondir)LoadTGA.c $(commondir)Linux/MicroGlut.c -lXt -lX11 -lGL -lm -lstdc++
+
 clean :
-	rm lab1-1 lab1-2 lab1-3 lab1-4 lab1-5
-
+	rm lab2-1 lab2-2 lab2-3 lab2-4 lab2-5
